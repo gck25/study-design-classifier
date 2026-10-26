@@ -1,0 +1,1 @@
+[{"model_type": "distilbert-base-uncased"}, {"model_type": "bert-base-cased"}, {"model_type": "allenai/scibert_scivocab_uncased"}, {"model_type": "dmis-lab/biobert-base-cased-v1.2"}]
