@@ -19,6 +19,21 @@ def get_texts_citations_labels(data_set):
             "labels": labels
         }
     )
+    
+def get_citations_labels(data_set):
+    texts = []
+    node_embeds = []
+    labels = []
+    for pmid in data_set:
+        node_embeds.append(data_set[pmid]["X_graph"])
+        labels.append(data_set[pmid]["y"])
+
+    return pd.DataFrame(
+        {
+            "node_embeds": node_embeds,
+            "labels": labels
+        }
+    )
 
 def get_embeddings(pmids, pmid_to_openAlex, study_design, model, split='train'):
     

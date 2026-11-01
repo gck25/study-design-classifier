@@ -1,6 +1,4 @@
 # study-design-classifier
-
-
 ## Classical ML experiments
 ### Set up environment
 ```
@@ -37,12 +35,16 @@ The output file should be `results_adjusted_metrics_bert.json`
 pip install -r requirements_gnn.txt
 ```
 ### Training
+Run the following command to train GBDT with node2vec embeddings:
+```
+python train_GBDT_node2vec_1gpu_decision_fn.py
+```
 
 Use the following notebook to train GBDT with BOW and node2vec concatenated:
 ```
 train_bow_node2vec_concat_decision_fn.ipynb
 ```
-The output file should be `results_adjusted_metrics_bow_node2vec_gbdt_concat.json`.
+The output file should be `results_adjusted_metrics_bow_node2vec_gbdt_concat.json`
 
 Use the following notebook to train a GBDT on BOW and GBT on node2vec ensemble:
 ```
