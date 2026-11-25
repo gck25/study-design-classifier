@@ -45,6 +45,7 @@ Run the following command to train GBDT with node2vec embeddings:
 ```
 python train_GBDT_node2vec_1gpu_decision_fn.py
 ```
+The output file should be `results_adjusted_metrics_node2vec_gbdt.json`.
 
 Use the following notebook to train GBDT with BOW and node2vec concatenated:
 ```
