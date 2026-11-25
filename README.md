@@ -7,8 +7,9 @@ Move data to `../data` directory
 ## Classical ML experiments
 ### Set up environment
 ```
-pip install -r requirements.txt
+pip install -r requirements_classical.txt
 ```
+
 ### Training
 Use the following notebook to train GBDT:
 ```
