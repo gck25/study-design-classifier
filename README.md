@@ -1,4 +1,9 @@
 # study-design-classifier
+## Data
+Download the data from huggingface: `https://huggingface.co/datasets/gck25/study-design-classification-PubMed?clone=true`
+
+Move data to `../data` directory
+
 ## Classical ML experiments
 ### Set up environment
 ```

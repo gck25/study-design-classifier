@@ -571,7 +571,7 @@ class BatchVectorizerXGBoost:
         ):
 
             # convert text chunk to unicode
-            X_chunk = X_chunk.values.astype("U")
+            X_chunk = np.asarray(X_chunk).astype("U")
 
             if not vec_fitted:
                 X_trans = self.vectorizer.fit_transform(X_chunk)
