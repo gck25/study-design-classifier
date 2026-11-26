@@ -66,6 +66,11 @@ train_gnn_bert_decision_fn.py.ipynb
 The output file should be `results_adjusted_metrics_gnn_bert.json`
 
 ## Results calculation notebooks
+### Set up environment
+```
+pip install -r requirements_classical.txt
+```
+
 ### Plot ROC curves
 Use the following Jupyter notebook:
 ```
@@ -76,10 +81,4 @@ plot_roc_curves.ipynb
 Use the following notebook to calculate the Wald CI threshold:
 ```
 wald_ci_calculations.ipynb
-```
-
-### Select decision function threshold
-Use the following notebook to adjust the decision function threshold:
-```
-select_df_threshold.ipynb
 ```
