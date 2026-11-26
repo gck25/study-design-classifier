@@ -24,7 +24,7 @@ def main():
     node2vec_gbdt_metrics_adjusted_results_path = "results_adjusted_metrics_node2vec_gbdt.json"
     results_node2vec_gbdt_file = "results_node2vec_gbdt_sample.json"
     results_texts_gbdt_file = "results_titles_abstracts_gbdt_features1000.json"
-    MODEL_DIR = "../models"
+    MODEL_DIR = "../data"
     EMBEDDING_FILENAME = os.path.join(MODEL_DIR, 'node_model.pkl')
     PMIDS = '../data/pmids.pkl'
     
@@ -39,12 +39,12 @@ def main():
     
     with open("../data/pmid_to_openAlex.json") as f:
         pmid_to_openAlex = json.load(f)
-    
+
     with open("../data/graph_lst.pkl", "rb") as f:
         graph_lst = pkl.load(f)
 
     graph = Graph(graph_lst, directed=False, weighted=False)
-    node2vec = Node2Vec(graph, dim=10, walk_length=100, context=10, p=2.0, q=0.5, workers=5)  # Use temp_folder for big graphs
+    node2vec = Node2Vec(graph, dim=10, walk_length=100, window=10, p=2.0, q=0.5, workers=5)  # Use temp_folder for big graphs
 
     # Load model after Node2Vec.wv.save_word2vec_format
     model = node2vec.wv.load_word2vec_format(EMBEDDING_FILENAME)
