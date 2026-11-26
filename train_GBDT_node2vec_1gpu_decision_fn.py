@@ -39,7 +39,7 @@ def main():
     
     with open("../data/pmid_to_openAlex.json") as f:
         pmid_to_openAlex = json.load(f)
-    
+
     with open("../data/graph_lst.pkl", "rb") as f:
         graph_lst = pkl.load(f)
 
