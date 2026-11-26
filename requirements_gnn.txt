@@ -1,5 +1,6 @@
 # pandas==2.1.4
 pandas<2.0.0
+pyarrow<21
 numpy==1.26.4
 tqdm==4.66.2
 xgboost
@@ -8,6 +9,8 @@ scipy==1.11.4
 fastnode2vec==0.0.7
 gensim
 networkx
+ray
+ray[tune]
 
 # # This file may be used to create an environment using:
 # # $ conda create --name <env> --file <this file>
