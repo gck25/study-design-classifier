@@ -1,4 +1,3 @@
-# pandas==2.1.4
 pandas<2.0.0
 pyarrow<21
 numpy==1.26.4
@@ -9,8 +8,12 @@ scipy==1.11.4
 fastnode2vec==0.0.7
 gensim
 networkx
-ray
-ray[tune]
+ray==2.9.3
+ray[tune]==2.9.3
+torch
+torch_geometric
+datasets==2.18.0
+setuptools==68.1.2
 
 # # This file may be used to create an environment using:
 # # $ conda create --name <env> --file <this file>
